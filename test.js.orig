@@ -14,16 +14,11 @@ const siteSearchObject = {
 
 // otro comentario
 
+<<<<<<< HEAD
+getSiteRes = await vvClient.sites
+=======
 const getSiteRes77 = await vvClient.sites
-  .getSites(siteSearchObject)
-  .then((res) => parseRes(res))
-  .then((res) => checkMetaAndStatus(res, shortDescription))
-  .then((res) => checkDataPropertyExists(res, shortDescription))
-  // Comment or delete the line bellow if you don't want to throw an error if the site doesn't exist.
-  .then((res) => checkDataIsNotEmpty(res, shortDescription));
-
-const siteGUID = getSiteRes.data[0].id;
-
+>>>>>>> feature/tareaPato
   .getSites(siteSearchObject)
   .then((res) => parseRes(res))
   .then((res) => checkMetaAndStatus(res, shortDescription))
