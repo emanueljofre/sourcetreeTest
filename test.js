@@ -9,6 +9,8 @@ const siteSearchObject = {
   fields: `id,name`,
 };
 
+// otro comentario
+
 const getSiteRes = await vvClient.sites
   .getSites(siteSearchObject)
   .then((res) => parseRes(res))
