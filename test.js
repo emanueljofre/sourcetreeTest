@@ -1,3 +1,4 @@
+//Fede
 // Place this variable in "Configurable Variables"
 const siteName = "siteName";
 
@@ -11,7 +12,7 @@ const siteSearchObject = {
 
 // otro comentario
 
-const getSiteRes = await vvClient.sites
+getSiteRes = await vvClient.sites
   .getSites(siteSearchObject)
   .then((res) => parseRes(res))
   .then((res) => checkMetaAndStatus(res, shortDescription))
