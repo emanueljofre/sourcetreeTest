@@ -7,11 +7,13 @@ const siteSearchObject = {
   q: `name eq '${siteName}'`,
   // Fields to return
   fields: `id,name,PatoChange-Tarea2`,
+  //Commentario Pato77
+  
 };
 
 // otro comentario
 
-const getSiteRes2 = await vvClient.sites
+const getSiteRes77 = await vvClient.sites
   .getSites(siteSearchObject)
   .then((res) => parseRes(res))
   .then((res) => checkMetaAndStatus(res, shortDescription))
