@@ -6,12 +6,12 @@ const siteSearchObject = {
   // Query to search for the site name
   q: `name eq '${siteName}'`,
   // Fields to return
-  fields: `id,name`,
+  fields: `id,name,PatoChange-Tarea2`,
 };
 
 // otro comentario
 
-const getSiteRes = await vvClient.sites
+const getSiteRes2 = await vvClient.sites
   .getSites(siteSearchObject)
   .then((res) => parseRes(res))
   .then((res) => checkMetaAndStatus(res, shortDescription))
