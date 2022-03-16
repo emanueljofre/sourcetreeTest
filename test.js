@@ -32,3 +32,5 @@ const siteGUID = getSiteRes.data[0].id;
   .then((res) => checkDataIsNotEmpty(res, shortDescription));
 
 const siteGUID = getSiteRes.data[0].id;
+
+/// tarea2
